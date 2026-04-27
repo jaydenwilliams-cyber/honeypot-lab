@@ -1,7 +1,6 @@
 # AWS Honeypot Lab — T-Pot 24.04.1
 
 ## Overview
-## Overview
 Deployed T-Pot honeypot framework on AWS EC2, exposed to the public internet to capture
 real-world attack telemetry over 24 hours. Built a Python script to automate IOC extraction
 and feed attack data into an LLM API for automated TTP mapping to MITRE ATT&CK.
