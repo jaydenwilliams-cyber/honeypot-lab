@@ -1,2 +1,33 @@
-# honeypot-lab
-Deployed T-Pot honeypot on AWS EC2, captured 24-hour attack telemetry, and analyzed TTPs and IOCs mapped to MITRE ATT&amp;CK.
+# AWS Honeypot Lab — T-Pot 24.04.1
+
+## Overview
+Deployed T-Pot honeypot framework on AWS EC2, exposed to the public internet to capture
+real-world attack telemetry. Lab running for 24 hours to collect attack data for TTP and
+IOC analysis.
+
+## Environment
+- Cloud: AWS EC2 (us-east-2)
+- Instance: m7i-flex.large (8GB RAM, 128GB storage)
+- OS: Ubuntu 24.04 LTS
+- Honeypot Framework: T-Pot 24.04.1 (Hive Edition)
+- Active Honeypot Services: Cowrie, Dionaea, Honeytrap, Suricata, Elasticpot,
+  Mailoney, Ciscoasa, Miniprint, Tanner, and more
+
+## Setup
+1. Deployed Ubuntu 24.04 EC2 instance on AWS
+2. Configured security groups to expose all honeypot ports to the internet
+3. Cloned T-Pot from telekom-security/tpotce
+4. Installed T-Pot Hive edition with Kibana dashboard
+5. Collected 24-hour attack telemetry
+
+## Findings
+*Populating after 24-hour collection window — check back soon.*
+
+## MITRE ATT&CK Mapping
+*Populating after analysis.*
+
+## Screenshots
+*Coming soon.*
+
+## Tools Used
+T-Pot, AWS EC2, Kibana, Elasticsearch, Suricata, Docker, Ubuntu
