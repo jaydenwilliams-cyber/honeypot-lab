@@ -42,7 +42,7 @@ Deployed T-Pot 24.04.1 on AWS EC2, exposed to the public internet to capture rea
 | T1190 | Exploit Public-Facing Application | Initial Access | Ciscoasa honeypot probed |
 | T1071 | Application Layer Protocol | Command and Control | ET INFO SSH session initiated alerts |
 
-## Screenshots
+## Screenshot
 ![Kibana Dashboard](kibana-dashboard.png)
 
 ## Tools Used
