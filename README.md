@@ -1,4 +1,4 @@
-# AWS Honeypot Lab — T-Pot 24.04.1
+# 24-Hour AWS Honeypot Lab — T-Pot 24.04.1
 
 ## About
 
