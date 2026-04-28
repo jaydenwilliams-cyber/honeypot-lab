@@ -43,7 +43,7 @@ Deployed T-Pot 24.04.1 on AWS EC2, exposed to the public internet to capture rea
 | T1071 | Application Layer Protocol | Command and Control | ET INFO SSH session initiated alerts |
 
 ## Screenshots
-![Kibana Dashboard](screenshots/kibana-dashboard.png)
+![Kibana Dashboard](kibana-dashboard.png)
 
 ## Tools Used
 T-Pot, AWS EC2, Kibana, Elasticsearch, Suricata, Docker, Debian
