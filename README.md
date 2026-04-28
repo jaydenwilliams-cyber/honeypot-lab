@@ -1,35 +1,46 @@
 # AWS Honeypot Lab — T-Pot 24.04.1
 
-## Overview
-Deployed T-Pot honeypot framework on AWS EC2, exposed to the public internet to capture
-real-world attack telemetry over 24 hours. Built a Python script to automate IOC extraction
-and feed attack data into an LLM API for automated TTP mapping to MITRE ATT&CK.
-Lab currently running — findings populating after collection window closes.
+## About
 
+I'm Jayden Williams, a cybersecurity student at Hillsborough Community College pursuing an A.A. in Cybersecurity. I hold CompTIA Security+ and CySA+ certifications and am targeting SOC Analyst and GRC roles.
+
+I built this lab to gain hands-on experience with threat detection, attack telemetry analysis, and MITRE ATT&CK mapping in a real-world environment. Rather than simulated traffic, this honeypot captures live attack data from the public internet — automated scanners, brute force attempts, and reconnaissance probes hitting within hours of deployment.
+
+## Overview
+
+Deployed T-Pot 24.04.1 on AWS EC2, exposed to the public internet to capture real-world attack telemetry. Analyzed attack data through Kibana dashboards and Elasticsearch, identifying attacker TTPs and mapping findings to MITRE ATT&CK.
 
 ## Environment
-- Cloud: AWS EC2 (us-east-2)
-- Instance: m7i-flex.large (8GB RAM, 128GB storage)
-- OS: Ubuntu 24.04 LTS
-- Honeypot Framework: T-Pot 24.04.1 (Hive Edition)
-- Active Honeypot Services: Cowrie, Dionaea, Honeytrap, Suricata, Elasticpot,
-  Mailoney, Ciscoasa, Miniprint, Tanner, and more
+
+| Component | Details |
+|---|---|
+| Cloud | AWS EC2 (us-east-2) |
+| Instance | m7i-flex.large (4 vCPU, 8 GiB RAM, 128 GiB storage) |
+| OS | Debian GNU/Linux |
+| Honeypot Framework | T-Pot 24.04.1 (Hive Edition) |
+| Active Honeypots | Cowrie, Ciscoasa |
+| Analysis Stack | Elasticsearch, Kibana, Suricata |
 
 ## Setup
-1. Deployed Ubuntu 24.04 EC2 instance on AWS
-2. Configured security groups to expose all honeypot ports to the internet
-3. Cloned T-Pot from telekom-security/tpotce
-4. Installed T-Pot Hive edition with Kibana dashboard
-5. Collected 24-hour attack telemetry
+
+1. Deployed Debian EC2 instance on AWS in us-east-2
+2. Configured security group to expose all honeypot ports to the internet (0.0.0.0/0)
+3. Cloned T-Pot from `telekom-security/tpotce`
+4. Ran installer with Hive edition configuration
+5. Accessed Kibana dashboard to monitor live attack telemetry
 
 ## Findings
-*Populating after 24-hour collection window — check back soon.*
+
+*Populating after collection window closes — check back soon.*
 
 ## MITRE ATT&CK Mapping
+
 *Populating after analysis.*
 
 ## Screenshots
+
 *Coming soon.*
 
 ## Tools Used
-T-Pot, AWS EC2, Kibana, Elasticsearch, Suricata, Docker, Ubuntu
+
+T-Pot, AWS EC2, Kibana, Elasticsearch, Suricata, Docker, Debian
